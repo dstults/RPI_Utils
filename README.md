@@ -21,6 +21,7 @@ BGControl.sh - Background script to run on a headless system with buttons and a 
 GPIOReadAll.sh - Quickly display the states of the GPIO pins so as to debug and test which pins are which.
 Miniscreen.sh	- This script tells you how to modify the bootup config so that stdout will go to the GPIO-attached screen instead of the HDMI plug.
 ToggleDisplay.sh - Teaches you how to detect the state of GPIO pins and then shows you how to toggle their states (swap in/out) by command.
+ToggleDisplay_Whiptail.sh - Simplistic whiptail script to control case screen backlight.
 
 
 Webserver
