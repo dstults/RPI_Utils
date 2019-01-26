@@ -1,6 +1,10 @@
 # RPI_Utils
 This is a collection of some of my non-special-purpose Raspberry Pi bash scripts and similar items.
 
+General
+
+TotalUpdate.sh - Refreshes repositories, updates everything, cleans up, updates firmware, then prompts to reboot.
+
 Network
 
 There are some network utilities and update override utilities that I made because when I was living in China, the country's firewall blocked certain IP addresses so very often OS installations and upgrades would fail.
