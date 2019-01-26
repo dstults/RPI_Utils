@@ -7,8 +7,8 @@ TotalUpdate.sh - Refreshes repositories, updates everything, cleans up, updates 
 
 Games
 
-adventure1.sh - I was on a long plane ride and I got bored. This is a simple RPG that you practically can't lose.
-adventure2.sh - When I got home I cleaned up the script a little and made it smarter, still basically the same game.
+Adventure1.sh - I was on a long plane ride and I got bored. This is a simple RPG that you practically can't lose.
+Adventure2.sh - When I got home I cleaned up the script a little and made it smarter, still basically the same game.
 
 Network
 
