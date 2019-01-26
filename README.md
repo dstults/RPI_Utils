@@ -5,19 +5,23 @@ General
 
 TotalUpdate.sh - Refreshes repositories, updates everything, cleans up, updates firmware, then prompts to reboot.
 
+Games
+
+adventure1.sh - I was on a long plane ride and I got bored. This is a simple RPG that you practically can't lose.
+adventure2.sh - When I got home I cleaned up the script a little and made it smarter, still basically the same game.
+
 Network
 
-There are some network utilities and update override utilities that I made because when I was living in China, the country's firewall blocked certain IP addresses so very often OS installations and upgrades would fail.
-
-One problem was that Google is blocked in China, thus when I tried to update the pi's default operating system, it would fail because Chromium couldn't update. One of the scripts detects whether the system is set to whether the update for Chromium is blocked, report back to you, and then it will prompt you asking you whether you want to block it (thereby making it possible to update your system without error).
-
-There is also a script to check to see if an IP address of your choice is blocked or not and then it will try to diagnose the nature of the blockage and tell you how to fix it.
+CheckVPN.sh - Helps you scan if a target IP address (i.e. your VPN server) is detectable and if so, whether the chosen port is open. If any step fails in this process, the script will tell you what you probably need to do to fix the situation.
+ChromiumUpdate.sh - Google is blocked in China, if you don't block Chromium from updating, your system updates will fail and things will break. This helps you to prevent that from happening.
 
 GPIO
 
-For a while I used a shell that had four buttons and a small text display attached to it. There was no documentation on how to interface with the shell so I had to find out for myself. The script would first dump the state of all the pins to a text map. It would then refresh every second, reporting any changes to the pin states. I was able to use this to determine which GPIO pins were affected by the buttons.
+BGControl.sh - Background script to run on a headless system with buttons and a miniscreen attached. Allows for a simplistic input console backlight to be toggled on and off and for the machine to be shutdown without having to connect via other means.
+GPIOReadAll.sh - Quickly display the states of the GPIO pins so as to debug and test which pins are which.
+Miniscreen.sh	- This script tells you how to modify the bootup config so that stdout will go to the GPIO-attached screen instead of the HDMI plug.
+ToggleDisplay.sh - Teaches you how to detect the state of GPIO pins and then shows you how to toggle their states (swap in/out) by command.
 
-Eventually I found out how to interface with the screen, so I made a script that mapped one button to toggling the backlight on and off, and another two that when pressed in unison would prompt on the screen whether you wanted to shut down the pi or not. Clicking on one would be yes, the other would return no. As the screen and shell are now gone, I have now reconfigured the script to just pretend to do those things.
 
 Webserver
 
