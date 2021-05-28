@@ -27,7 +27,3 @@ This is a collection of some of my non-special-purpose Raspberry Pi bash scripts
 # Webserver
 
 - I made a PHP page that asks for a password, and once entered lets you shut down the pi via webpage. Useful when you don't want to install a massive package just to do this one tiny function.
-
-# ...and many more!
-
-Having to self-learn bash to prepare the aforementioned scripts, I prepared a large amount of scripts that test colors, switch/case statements and more. Feel free to browse around. Maybe one day I'll make my own bash tutorial.
