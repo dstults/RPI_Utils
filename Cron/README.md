@@ -24,10 +24,7 @@ Thanks to: https://stackoverflow.com/questions/610839/how-can-i-programmatically
 
 ```
 (crontab -l; echo "0 * * * * your_command") | sort - | uniq - | crontab -
-```
 
-Example with above script:
-
-```
+# Example:
 (crontab -l; echo "0 * * * * bash /var/www/shared/shell/get_machine_stats.sh") | sort - | uniq - | crontab -
 ```

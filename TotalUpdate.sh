@@ -23,10 +23,10 @@ echo "==========================="
 echo "[*] Package cleanup complete."
 logger "Completing 'TotalUpdate.sh' system update"
 while true; do
-        read -r -p "Do you wish to reboot? " choice
-        case "$choice" in
-                y|Y ) echo "[*] Rebooting..."; sudo reboot; break;;
-                n|N ) echo "[*] Done."; break;;
-                * ) echo "[-] Invalid response. Use 'y' or 'n'.";;
-        esac
+	read -r -p "Do you wish to reboot? " choice
+	case "$choice" in
+		y|Y ) echo "[*] Rebooting..."; sudo reboot; break;;
+		n|N ) echo "[*] Done."; break;;
+		* ) echo "[-] Invalid response. Use 'y' or 'n'.";;
+	esac
 done

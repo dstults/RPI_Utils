@@ -29,4 +29,3 @@ disk_use=$(echo "scale=1; 100 * $disk_use / $disk_total" | bc -l)
 
 # 2) Log to database
 mysql -u $sqluser -p$sqlpassword -e "INSERT INTO sysmon.stats (date_time, cpu_temp, gpu_temp, cpu_use, ram_use, disk_use) VALUE (NOW(), $cpu_temp, $gpu_temp, $cpu_use, $ram_use, $disk_use);"
-
